@@ -1,0 +1,75 @@
+*{
+	margin: 0px;
+	padding: 0;
+}
+#banner{
+	width: 1200px;
+	height: 460px;
+	overflow:hidden;
+	margin: 100px auto;
+	position: relative;
+	
+}
+.banner-slide{
+	width: 1200px;
+	height: 460px;
+	background-repeat:no-repeat;
+	float:left;
+	display: none;
+}
+.slide-active{
+	display: block;
+}
+.slide1{
+	background-image:url(../img/bg1.jpg) ;
+}
+.slide2{
+	background-image: url(../img/bg2.jpg);
+}
+.slide3{
+	background-image: url(../img/bg3.jpg);
+}
+.button{
+	height: 80px;
+    width: 40px;
+    position: absolute;
+    background:url(../img/arrow.png) center center no-repeat;
+	top: 50%;
+    left: 100px;
+    margin-top: -40px;
+    }
+.prev{
+	transform: rotate(180deg);
+}
+.next{
+	left: auto;
+	right: 100px;
+}
+.button:hover{
+	background-color:gray ;
+	opacity: 0.8;
+	filter:alpha(opacity=80);
+}
+.dots{
+	position: absolute;
+	bottom: 120px;
+	right: 80px;
+	text-align: right;
+	padding-right: 24px;
+	line-height: 12px;
+}
+.dots span{
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	margin-left: 8px;
+	background-color: rgba(7, 17, 27, 0.4);/*设置颜色的同时可以设置透明度*/
+	cursor: pointer;
+	box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.8) inset;
+
+}
+.dots span.active{
+	box-shadow: 0 0 0 2px rgba(7, 17, 27, 0.4) inset;/*水平方向 垂直方向 阴影距离*/
+	background-color: #ffffff;
+}
